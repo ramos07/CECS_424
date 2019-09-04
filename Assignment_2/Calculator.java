@@ -1,20 +1,29 @@
-public class Calculator {
-  public static void main(String [] args) {
+//import java util.*;
+import java.util.Scanner;
 
-    String[] input = String.split(args[0]);
-    int int1 = Integer.parseInt(input[0]);
-    int int2 = Integer.parseInt(input[2]);
+public class Test{
+  public static void main(String [] args){
+
+    //String input = "1+4";
+    Scanner in = new Scanner(System.in);
+    System.out.println("Enter an expression\n");
+    String input = in.nextLine();
+    String [] strArr = input.split("", 0);
+    int int1 = Integer.parseInt(strArr[0]);
+    int int2 = Integer.parseInt(strArr[2]);
     int out;
 
-    if(input[1].equals("+")) {
+    if(strArr[1].equals("+")) {
       out = int1 + int2;
-    }else if(input[1].equals("-")) {
+    }else if(strArr[1].equals("-")) {
       out = int1 - int2;
-    }else if(input[1].equals("*")) {
+    }else if(strArr[1].equals("*")) {
       out = int1 * int2;
     }else {
       out = int1 / int2;
     }
-    System.out.println(out);
+    System.out.println(input + " " + out);
+
+
   }
 }
