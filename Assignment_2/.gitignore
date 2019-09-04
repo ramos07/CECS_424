@@ -1,0 +1,8 @@
+#Ignoring the compile instructions
+compile_instructions.txt
+
+#Ignoring the test.go file, it's just used for test purposes
+test.go
+
+#Ignoring the Calculator.class
+Calculator.class
