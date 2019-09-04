@@ -4,5 +4,7 @@ compile_instructions.txt
 #Ignoring the test.go file, it's just used for test purposes
 test.go
 
-#Ignoring the Calculator.class
+#Ignoring the java class files and .java files that are not necessary
+# or are for testing purposes
 Calculator.class
+Test.java
