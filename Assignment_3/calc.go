@@ -17,16 +17,18 @@ func main() {
   operand := input[1]
   int2 := input[2]
 
-  integer1, err := strconv.Atoi(int1)
+  //integer1, err := strconv.Atoi(int1)
+  integer1, err := strconv.ParseFloat(int1, 64)
   if(err != nil) {
     log.Fatal(err)
   }
-  integer2, err := strconv.Atoi(int2)
+  //integer2, err := strconv.Atoi(int2)
+  integer2, err := strconv.ParseFloat(int2, 64)
   if(err != nil) {
     log.Fatal(err)
   }
 
-  var result int
+  var result float64
   if(operand == "+"){
     result = integer1 + integer2
   }else if (operand == "-"){
