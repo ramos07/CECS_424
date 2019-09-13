@@ -1,14 +1,10 @@
-//import java util.*;
-import java.util.Scanner;
+import java.util.Arrays;
 
-public class Test{
+public class Calculator{
   public static void main(String [] args){
 
-    //String input = "1+4";
-    Scanner in = new Scanner(System.in);
-    System.out.println("Enter an expression\n");
-    String input = in.nextLine();
-    String [] strArr = input.split("", 0);
+    String [] strArr = args[0].split(" ");
+    String expr = strArr[0] + " " + strArr[1] + " " + strArr[2];
     int int1 = Integer.parseInt(strArr[0]);
     int int2 = Integer.parseInt(strArr[2]);
     int out;
@@ -22,8 +18,7 @@ public class Test{
     }else {
       out = int1 / int2;
     }
-    System.out.println(input + " " + out);
-
+    System.out.println(expr + " = " + Integer.toString(out));
 
   }
 }
