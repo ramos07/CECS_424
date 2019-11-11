@@ -1,2 +1,2 @@
-# CECS_445
+# CECS_424
 Organization of Programming Languages
